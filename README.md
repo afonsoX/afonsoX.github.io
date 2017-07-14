@@ -1,4 +1,4 @@
-###ork from Hux Blog(https://huangxuan.me)
+###fork from Hux Blog(https://huangxuan.me)
 
 ![](http://huangxuan.me/img/blog-desktop.jpg)
 
