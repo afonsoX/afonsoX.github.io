@@ -7,7 +7,7 @@ author:     "Shane"
 header-img: "img/post-bg-2015.jpg"
 catalog: true
 tags:
-    - 开始的地方
+    - 生活
 ---
 
 > “ To be continued …” <br>
