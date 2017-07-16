@@ -6,34 +6,33 @@ date:       2017-07-15 18:03:00
 author:     "Shane"
 header-img: "img/post-bg-2015.jpg"
 catalog: true
-tags:
-    - 生活
+tags:[blog,开始]
+    - 开始的地方
 ---
 
-> “Yeah It's on. ”
-
+> “ To be continued …” <br>
+> **关键字**：域名注册，[GitHub Pages](https://pages.github.com/)，[Jekyll](http://jekyllrb.com/)
 
 ## 前言
 
-Shane 的 Blog 就这么开通了。
-blog 的jekyll模版源自 Hux
+Shane的Blog总算是开通了😂。
+blog的jekyll模版源自[Hux](https://github.com/Huxpro/huxpro.github.io)大神
 
-[跳过废话，直接看技术实现 ](#build) 
+[新手搭建博客的心路历程](#build) 
 
 
 
-2017年7月15日 阿翔同学终于决定要好好学习，努力翻身了。
+2017年7月15日 Shane同学终于决定要好好学习，努力翻身了，耶耶😄。
 
 <p id = "build"></p>
----
 
 ## 正文
 
-接下来说说搭建这个博客的技术细节。  
+**主要参考资料:**
 
-正好之前就有关注过 [GitHub Pages](https://pages.github.com/) + [Jekyll](http://jekyllrb.com/) 快速 Building Blog 的技术方案，非常轻松时尚。
+[读立写生](http://www.cnfeat.com/blog/2014/05/10/how-to-build-a-blog/)，[黄玄](https://huangxuan.me/2015/01/29/hello-2015/)，[pchou](http://www.pchou.info/ssgithubPage/2014-07-04-build-github-blog-page-08.html)，[beiyuu](http://beiyuu.com/github-pages)等大佬博客中的相关内容。  
 
-其优点非常明显：
+Github Page建站的主要优点：
 
 * **Markdown** 带来的优雅写作体验
 * 非常熟悉的 Git workflow ，**Git Commit 即 Blog Post**
@@ -41,37 +40,104 @@ blog 的jekyll模版源自 Hux
 	* 如果需要自定义域名，也只需要简单改改 DNS 加个 CNAME 就好了 
 * Jekyll 的自定制非常容易，基本就是个模版引擎
 
+可选择性忽视的缺点：
 
-本来觉得最大的缺点可能是 GitHub 在国内访问起来太慢，所以第二天一起床就到 GitCafe(Chinese GitHub Copy，现在被 Coding 收购了) 迁移了一个[镜像](http://huxpro.coding.me)出来，结果还是巨慢。
-
-哥哥可是个前端好嘛！ 果断开 Chrome DevTool 查了下网络请求，原来是 **pending 在了 Google Fonts** 上，页面渲染一直被阻塞到请求超时为止，难怪这么慢。  
-忍痛割爱，只好把 Web Fonts 去了（反正超时看到的也只能是 fallback ），果然一下就正常了，而且 GitHub 和 GitCafe 对比并没有感受到明显的速度差异，虽然 github 的 ping 值明显要高一些，达到了 300ms，于是用 DNSPOD 优化了一下速度。
-
-
+* Jekyll 模版系统时静态页发布
+* 不如使用 Wordpress 来的方便
 
 ---
-
-配置的过程中也没遇到什么坑，基本就是 Git 的流程，相当顺手
-
-大的 Jekyll 主题上直接 fork 了 Clean Blog（这个主题也相当有名，就不多赘述了。唯一的缺点大概就是没有标签支持，于是我给它补上了。）
-
-本地调试环境需要 `gem install jekyll`，结果 rubygem 的源居然被墙了……后来手动改成了我大淘宝的镜像源才成功
-
-Theme 的 CSS 是基于 Bootstrap 定制的，看得不爽的地方直接在 Less 里改就好了（平时更习惯 SCSS 些），**不过其实我一直觉得 Bootstrap 在移动端的体验做得相当一般，比我在淘宝参与的团队 CSS 框架差多了……**所以为了体验，也补了不少 CSS 进去
-
-最后就进入了耗时反而最长的**做图、写字**阶段，也算是进入了**写博客**的正轨，因为是类似 Hack Day 的方式去搭这个站的，所以折腾折腾着大半夜就过去了。
-
-第二天考虑中文字体的渲染，fork 了 [Type is Beautiful](http://www.typeisbeautiful.com/) 的 `font` CSS，调整了字号，适配了 Win 的渣渲染，中英文混排效果好多了。
+### Github介绍
 
 
-## 后记
+> GitHub Pages 可以被认为是用户编写的、托管在 GitHub 上的静态网页。
 
-回顾这个博客的诞生，纯粹是出于个人兴趣。在知乎相关问题上回答并获得一定的 star 后，我决定把这个博客主题当作一个小小的开源项目来维护。
+---
+### 购买域名
+* 推荐使用[狗爹](https://www.GoDaddy.com/)购买域名，可以使用支付婊。
+	* 狗爹网上有许多优惠码，不要错过！（若优惠码失效，清除cookies） 
+* 使用阿里云旗下的[中国万网](https://wanwang.aliyun.com/)
+* 腾讯云，百度云，各种云旗下购买域名
 
-在经历 v1.0 - v1.5 的蜕变后，这个博客主题愈发完整，不但增加了诸多 UI 层的优化（opinionated）；在代码层面，更加丰富的配置项也使得这个主题拥有了更好的灵活性与可拓展性。而作为一个开源项目，我也积极的为其完善文档与解决 issue。
+---
+### Git安装配置
+**1.下载安装Git**  
+在Git官网下载 [Git](http://git-scm.com/)。  双击.pkg安装包后可能出现无法安装，如下图
 
-如果你恰好逛到了这里，希望你也能喜欢这个博客主题。
+![>01 Git Unknown source](http://img.blog.csdn.net/20151219163427580?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
 
-—— Hux 后记于 2015.10
+这时候需要权限才能安装，使用Control + .pkg文件。
+
+**2.配置SSH Key**  
+	`$ cd ~/.ssh 检查本季的ssh密钥`  
+如果提示：No such file or directory 说明你是第一次使用 git。
+**3.生成新的SSH Key**  
+
+```
+ssh-keygen -t rsa -C " name@email.com "
+Generating public/private rsa key pair.
+Enter file in which to save the key(/Users/your_user_directory/.ssh/id_rsa):<回车>
+```
+* 注意大些C
+
+```
+Enter passphrase(empty for no passphrass):<回车或输入密码>
+Enter same passphrase again:<同上>
+```
+* 输入密码时没有显示
+
+![> 13 终端设置成功](http://openmindclub.qiniudn.com/omt/BuildBlog013.jpg)
+* 显示**SSH Key**配置成功。
+
+**添加SSH Key到Github**
+
+- 1、打开 Users／.ssh文件夹下的id_rsa.pub文件（隐藏文件）。在mac系统下寻找隐藏文件：
+	- command + shift + .  显示/隐藏文件、文件夹
+	- finder下 command + shift + G 可以前往任何一个文件夹
+- 2、登陆Github，Account Setting --> SSH Public keys --> add another public keys
+
+- 3、把id_rsa.pub中的密钥复制到文本框中
+
+**测试SSH**
+
+在terminal中输入`$ ssh -T git@
+Github.com `
+出现反馈  
+
+```
+The authenticity of host 'GitHub.com (207.97.227.239)' can't be established.
+    RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+    Are you sure you want to continue connecting (yes/no)?
+    
+```
+输入yes后提示`Permission denied(publickey)`说明SSH Key添加失败。最后求助于[Github帮助文档](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
+
+![permission deny](http://ot6qg4j9m.bkt.clouddn.com/image/jpg/2017-7-15.jpg%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-07-16%20%E4%B8%8B%E5%8D%889.45.04.png)
+
+按help文档说明修改config文件后，添加`$ ssh-add -K ~/.ssh/id_rsa`
+
+再次操作后看到`Hi cnfeat! You've successfully authenticated, but GitHub does not provide shell access.`
+**设置用户信息**
+
+```
+$ git config --global user.name "yourname"//用户名
+    $ git config --global user.email "name@email.com"//填写自己的邮箱
+```
+**相关参考文件**
+
+* [GitHub Help - Generating SSH Keys](http://help.GitHub.com/articles/generating-ssh-keys)
+* [GitHub Help - Error Permission denied (publickey)](http://help.GitHub.com/articles/error-permission-denied-publickey)
+
+## DNS域名解析
+由于我使用的是万网的域名系统，万网可以负责免费解析。按照提示即可完成域名解析。
+![Domain name resolution](http://ot6qg4j9m.bkt.clouddn.com/2017-7-15%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-07-16%20%E4%B8%8B%E5%8D%8810.05.14.png?imageslim)
+
+## Fork 仓库模版
+fork [Hux](https://github.com/Huxpro/huxpro.github.io)大神的blog模版，更改CNAME中的域名。
+更新_config.yml中的配置信息。
+
+## 使用七牛云作为图床
+[七牛云](https://portal.qiniu.com/bucket/ashane/resource)
+
+—— By Shane .
 
 
