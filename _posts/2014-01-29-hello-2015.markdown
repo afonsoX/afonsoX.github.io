@@ -6,8 +6,8 @@ date:       2017-07-15 18:03:00
 author:     "Shane"
 header-img: "img/post-bg-2015.jpg"
 catalog: true
-tags:
-    - 生活
+tags: 
+	- 生活
 ---
 
 > “ To be continued …” <br>
