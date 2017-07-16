@@ -10,7 +10,8 @@ tags:
 	- 生活
 ---
 
-> “ To be continued …” <br>
+> “ To be continued …” 
+
 > **关键字**：域名注册，[GitHub Pages](https://pages.github.com/)，[Jekyll](http://jekyllrb.com/)
 
 ## 前言
