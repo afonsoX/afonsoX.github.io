@@ -6,7 +6,7 @@ date:       2017-07-15 18:03:00
 author:     "Shane"
 header-img: "img/post-bg-2015.jpg"
 catalog: true
-tags:[blog,开始]
+tags:
     - 开始的地方
 ---
 
@@ -53,7 +53,7 @@ Github Page建站的主要优点：
 
 ---
 ### 购买域名
-* 推荐使用[狗爹](https://www.GoDaddy.com/)购买域名，可以使用支付婊。
+* 推荐使用[狗爹](https://www.GoDaddy.com/)购买域名，可以使用支付婊
 	* 狗爹网上有许多优惠码，不要错过！（若优惠码失效，清除cookies） 
 * 使用阿里云旗下的[中国万网](https://wanwang.aliyun.com/)
 * 腾讯云，百度云，各种云旗下购买域名
