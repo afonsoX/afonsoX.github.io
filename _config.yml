@@ -1,8 +1,8 @@
 # Site settings
-title: Shane's Blog
+title: AShane's Blog
 SEOTitle: 阿翔的博客 | A Shane's Blog
 header-img: img/home-bg.jpg
-email: huxpro@gmail.com
+email: ashane_x@live.com
 description: "咸鱼·自传 | 陈洪翔，how do you do，fellow kids"
 keyword: " 阿翔的部落格，爱做梦的咸鱼，无知大学生，软件工程届无证骑士"
 url: "https://ashane.online"              # your host, for absolute URL
@@ -12,10 +12,10 @@ baseurl: ""                             # for example, '/blog' if your blog host
 
 # SNS settings
 RSS: false
-weibo_username:     huxpro
-zhihu_username:     huxpro
-github_username:    huxpro
-twitter_username:   huxpro
+#weibo_username:     huxpro
+#zhihu_username:     huxpro
+github_username:    afonsoX
+#twitter_username:   huxpro
 #facebook_username:  huxpro
 #linkedin_username:  firstname-lastname-idxxxx
 
@@ -61,14 +61,14 @@ netease_comment: false
 
 # Google Analytics
 ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: asheng.online
+ga_domain: ashane.online
 
 
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "写写代码，调调参数，浮生六记"
-sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "从入门到放弃，翻身仍在继续(￣∇￣)"
+sidebar-avatar: /img/ashane.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
@@ -87,6 +87,8 @@ service-worker: true
 # Friends
 friends: [
     {
+        title:"梦里吃饭不发胖"，
+        href:"https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU0NDMxNTYwNQ==&scene=124&#wechat_redirect"
     #     title: "Su",
     #     href: "http://su.gallery/"
     # },{
