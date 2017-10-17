@@ -67,7 +67,7 @@ ga_domain: ashane.online
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "从入门到放弃，翻身仍在继续(￣∇￣)"
+sidebar-about-description: "从入门到放弃，翻身还要继续"
 sidebar-avatar: /img/avatar-ashane.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
