@@ -87,8 +87,8 @@ service-worker: true
 # Friends
 friends: [
     {
-        title:"梦里吃饭不发胖",
-        href:"https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU0NDMxNTYwNQ==&scene=124&#wechat_redirect"
+        title: "梦里吃饭不发胖",
+        href: "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU0NDMxNTYwNQ==&scene=124&#wechat_redirect"
     #     title: "Su",
     #     href: "http://su.gallery/"
     # },{
